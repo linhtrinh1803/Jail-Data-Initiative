@@ -1,37 +1,38 @@
-# Jail Data Initiative: Solving Inequality in the Criminal Justice System
-## Introduction
-Welcome to the Jail Data Initiative, a project dedicated to addressing and mitigating inequality within the criminal justice system by analyzing and leveraging jail data. This README serves as a guide to help you understand the objectives, data sources, methodologies, and ways to contribute to this initiative.
+# Comprehensive Criminal Justice Analysis
+## Overview
 
-##Project Overview
-The criminal justice system can be rife with inequalities, affecting marginalized communities disproportionately. The Jail Data Initiative aims to:
+This repository encompasses a thorough analysis of incarceration data, offering insights into various aspects of the criminal justice system. The analysis is presented through a series of Python scripts and Jupyter notebooks, each addressing specific facets of data cleaning, predictive modeling, and exploratory analysis. The goal is to provide a comprehensive understanding of incarceration dynamics, support informed decision-making, and contribute valuable insights for policymakers, researchers, and stakeholders.
 
-- Collect, analyze, and visualize data related to jail populations.
-- Identify and understand disparities in arrests, sentencing, and incarceration.
-- Raise awareness about systemic issues.
-- Propose data-driven solutions to address these inequalities.
-## Data Sources
-To achieve these goals, we use a variety of data sources, including but not limited to:
+## Data Cleaning
+The Data Cleaning Python script is designed to preprocess and standardize a dataset containing information about individuals within the criminal justice system. It covers essential tasks such as column renaming, gender, race, eye color, hair color mapping, housing mapping, top charge mapping, height conversion, weight cleaning, bail and bond cleaning, date conversion, age calculation, and incarcerated days calculation. The script ensures consistency and enhances the data for further analysis.
 
-- Local, state, and federal government databases.
-- Publicly available crime and arrest data.
-- Demographic and socioeconomic data.
-- Court and sentencing records.
+## Analysis
 
-## Getting Started
-To get involved with the Jail Data Initiative, follow these steps:
+The Analysis section is organized into three notebooks, each focusing on different aspects:
 
-1. Clone the Repository: Clone this repository to your local machine:
+1. Incarcerated Days Notebook: Utilizes machine learning models and statistical analysis to predict and understand the duration of incarceration for individuals.
+2. Duration out of Jails & Incarceration Counts Notebook: Primarily involves statistical analysis to explore and interpret quantitative aspects related to incarceration, such as counts, demographic breakdowns, or other numerical metrics.
+3. Re-incarceration Notebook: Encompasses statistical analysis, machine learning models, and time series analysis to explore patterns of re-incarceration over time.
+4. Dependencies for the analysis notebooks include pandas, numpy, matplotlib, seaborn, scikit-learn, statsmodels, xgboost, and tensorflow.
 
-2. Install Dependencies: Set up the necessary tools, libraries, and dependencies required for data analysis, visualization, and modeling.
+## Detecting and Analyzing Overlapping Stays
+The Python script in this section focuses on detecting overlapping stays within the same housing facility for inmates. It includes step-by-step instructions for data preparation, execution, parameter adjustments, and visualizations to identify and analyze instances of overlapping stays.
 
-3. Explore the Data: Dive into the available data sources in the data directory to familiarize yourself with the information at hand.
+## XGBoost Model Tuning Notebook
+This notebook specifically addresses the tuning of an XGBoost regression model for predicting the duration of incarceration. It employs a grid search approach to optimize hyperparameters, including max_depth, min_child_weight, and gamma. The notebook provides a systematic process for model tuning and evaluation, including visualizations of feature importance.
 
-4. Data Analysis: Contribute to the data analysis process by exploring disparities and inequalities within the criminal justice system.
+## Usage
+1. Clone the repository to your local machine.
+2. Follow the instructions in each script/notebook for data preparation and execution.
+3. Customize parameters, mappings, and datasets based on your specific requirements.
+4. Ensure that dependencies are installed using the provided commands.
 
-5. Modeling and Visualizations: Develop data models and create visualizations to represent the findings effectively.
+## Important Notes
+- Verify and adjust the mappings, dictionaries, and assumptions in the scripts based on your dataset.
+- Customize the code as needed for your specific analysis goals.
+- Ensure the input datasets are clean, well-formatted, and contain the required columns.
 
-6. Contribute to Documentation: Help improve the project's documentation, including data sources, methodologies, and results.
+### Contributors
+This repository and analysis were created by Brenda, Antonio, and Linh. Feel free to reach out for any questions or assistance.
 
-## Data Privacy and Ethics
-Respect for data privacy and ethical handling of sensitive data are paramount in this initiative. Please ensure that you adhere to all relevant laws, regulations, and ethical guidelines when working with the data.
-
+Happy analyzing!
